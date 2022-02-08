@@ -4,11 +4,8 @@ function compute()
     r = document.getElementById("rate").value;
     t = document.getElementById("years").value;
     
-    if(p == ""){
-        alert("Principal amount can not be left blank");
-        document.getElementById("principal").focus();
-    }
-    else if(parseInt(p) <=0){
+    
+     if( p == "" || parseInt(p) <=0){
         alert("Please enter a positive number");
         document.getElementById("principal").focus();
     }
